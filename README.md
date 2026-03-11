@@ -1,28 +1,23 @@
 # Electrocardiograms
 
-## Veri setini indirin
+## Download the dataset
 
-Veri seti [buradan](https://d32aokrjazspmn.cloudfront.net/materials/ML_Electrocardiograms_dataset.csv) edinilebilir. Aşağıdaki komutlarla indirip `02-Electrocardiograms` dizinindeki `data` klasörüne kaydedelim:
+The dataset can be obtained from [here](https://d32aokrjazspmn.cloudfront.net/materials/ML_Electrocardiograms_dataset.csv). Download it using the following commands and save it to the `data` folder in the `02-Electrocardiograms` directory:
 
 ```bash
 curl https://d32aokrjazspmn.cloudfront.net/materials/ML_Electrocardiograms_dataset.csv > data/electrocardiograms.csv
 ```
 
-## Veri seti
+## Dataset
 
-- Veri setinin her gözlemi, bir hastanın electrocardiogram (ECG)'ından alınan sayısal olarak temsil edilmiş kalp atışıdır.
-- `target` ikili değerlidir ve kalp atışının kardiyovasküler hastalık riski altında olup olmadığını tanımlar [1] veya değildir [0].
+- Each observation in the dataset is a numerically represented heartbeat taken from a patient's electrocardiogram (ECG).
+- `target` is binary and defines whether the heartbeat is at risk of cardiovascular disease [1] or not [0].
 
-## Alıştırma
+## Exercise
 
-🎯 Göreviniz kardiyovasküler hastalık riski altındaki kalp atışlarını işaretlemektir. Şunları yapacaksınız:
+🎯 The task is to flag heartbeats at risk of cardiovascular disease:
 
-- Veri setinin sınıf dengesini araştırın
-- İki modeli değerlendirin ve karşılaştırın: KNN ve LogisticRegression
-- Modellerin performansları hakkında içgörü elde etmek için Confusion matrix ve Classification report kullanın
-- Uygun metriğe dayalı olarak optimal modeli seçin
-
-Alıştırmaya başlamak için `jupyter notebook`'ta `Electrocardiograms.ipynb`'yi açın ve talimatları takip edin.
-
-🚀 Sıra sizde!
-
+- Investigate the class balance of the dataset
+- Evaluate and compare two models: KNN and LogisticRegression
+- Use the Confusion matrix and Classification report to gain insights into the performance of the models
+- Select the optimal model based on the appropriate metric
